@@ -50,3 +50,16 @@ This curriculum is meant to be used in sixteen lessons, running 60 minutes long,
 * a basic game framework
 * using a basic data structure (data.___)
 * bringing together many of the concepts learned to make a Circle Clash game!
+
+# Credits
+
+Teknowledge started as a Carnegie Mellon student organization in early 2016, and has continued through the help of many organizations and people.
+
+## Curriculum Developers
+Erik Pintar, Chris George, Amal Nanavati, Rudina Morina, Vikram Shanker
+
+## Special Thanks
+Mark Stehlik, David Kosbie
+
+## Thanks for Funding
+Google, [Google IgniteCS](https://ignitecs.withgoogle.com/), Carnegie Mellon University
