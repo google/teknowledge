@@ -2,20 +2,23 @@
 # TAKE-HOME CHALLENGE
 from tkinter import *
 
+
 def draw(canvas, width, height):
-  # Fun: For more interesting colors, visit: http://wiki.tcl.tk/37701
-  fillColor = "blue"
-  canvas.create_rectangle(0, 0, 10, 10, fill=fillColor)
-  canvas.create_rectangle(10, 10, 20, 20, fill=fillColor)
-  canvas.create_rectangle(20, 20, 30, 30, fill=fillColor)
+    # Fun: For more interesting colors, visit: http://wiki.tcl.tk/37701
+    fillColor = "blue"
+    canvas.create_rectangle(0, 0, 10, 10, fill=fillColor)
+    canvas.create_rectangle(10, 10, 20, 20, fill=fillColor)
+    canvas.create_rectangle(20, 20, 30, 30, fill=fillColor)
+
 
 def runDrawing(width=200, height=200):
-  root = Tk()
-  canvas = Canvas(root, width=width, height=height, highlightthickness=0)
-  canvas.pack()
-  draw(canvas, width, height)
-  root.mainloop()
-  print("bye!")
+    root = Tk()
+    canvas = Canvas(root, width=width, height=height, highlightthickness=0)
+    canvas.pack()
+    draw(canvas, width, height)
+    root.mainloop()
+    print("bye!")
+
 
 runDrawing()
 

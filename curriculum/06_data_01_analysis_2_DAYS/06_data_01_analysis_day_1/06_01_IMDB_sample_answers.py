@@ -56,7 +56,7 @@ for movieName in IMDBData:
         maxRating = rating
         maxRatedMovie = movieName
 
-print(maxRatedMovie, " is the highest rated movie in the database, with rating ",  maxRating)
+print(maxRatedMovie, " is the highest rated movie in the database, with rating ", maxRating)
 
 # Challenge 1.6 - Now let's find the oldest movie in the database. Write a loop
 # that goes over every movie in the database, get its year, and ends up printing

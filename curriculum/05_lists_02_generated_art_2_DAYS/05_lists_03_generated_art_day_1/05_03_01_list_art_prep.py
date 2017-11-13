@@ -1,35 +1,38 @@
 from tkinter import *
-import random
 
 # format of tuples is
 # (x0, y0, x1, y1, shapeColor)
 # so you can do canvas.create_rectangle(x0, y0, x1, y1, fill=shapeColor)
 drawingsList = [
-	(0, 0, 20, 20, 'red'),
-	(30, 30, 180, 180, 'blue'),
-  (110, 20, 140, 190, 'yellow'),
+    (0, 0, 20, 20, 'red'),
+    (30, 30, 180, 180, 'blue'),
+    (110, 20, 140, 190, 'yellow'),
 ]
 
+
 def draw(canvas, width, height):
-  # YOUR CODE HERE
-  drawingTuple = drawingsList[0]
-  x0 = drawingTuple[0]
-  y0 = drawingTuple[1]
-  x1 = drawingTuple[2]
-  y1 = drawingTuple[3]
-  color = drawingTuple[4]
-  canvas.create_rectangle(x0, y0, x1, y1, fill=color)
+    # YOUR CODE HERE
+    drawingTuple = drawingsList[0]
+    x0 = drawingTuple[0]
+    y0 = drawingTuple[1]
+    x1 = drawingTuple[2]
+    y1 = drawingTuple[3]
+    color = drawingTuple[4]
+    canvas.create_rectangle(x0, y0, x1, y1, fill=color)
+
 
 def getRandomSquareCoordinates(cw, ch):
-  pass # your code goes here for Challenge 2.3
+    pass  # your code goes here for Challenge 2.3
+
 
 def runDrawing(width=200, height=200):
-  root = Tk()
-  canvas = Canvas(root, width=width, height=height, highlightthickness=0)
-  canvas.pack()
-  draw(canvas, width, height)
-  root.mainloop()
-  print("bye!")
+    root = Tk()
+    canvas = Canvas(root, width=width, height=height, highlightthickness=0)
+    canvas.pack()
+    draw(canvas, width, height)
+    root.mainloop()
+    print("bye!")
+
 
 runDrawing()
 

@@ -1,21 +1,22 @@
-
 def startTrail():
-  print("There are three trails to hike.")
-  print("Type red, blue or green to choose your trail.")
-  trail = input("> ")
+    print("There are three trails to hike.")
+    print("Type red, blue or green to choose your trail.")
+    trail = input("> ")
 
-  if trail == "red":
-    redTrail()
-  elif trail == "blue":
-    blueTrail()
-  else:
-    greenTrail()
+    if trail == "red":
+        redTrail()
+    elif trail == "blue":
+        blueTrail()
+    else:
+        greenTrail()
 
-  print("The end.")
+    print("The end.")
+
 
 def redTrail():
-  print("You hike the red trail.")
-  print("The red trail is adventurous.")
+    print("You hike the red trail.")
+    print("The red trail is adventurous.")
+
 
 startTrail()
 

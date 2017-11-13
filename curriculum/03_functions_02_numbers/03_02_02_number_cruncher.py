@@ -1,23 +1,24 @@
-
 def add(x, y):
-  return x + y
+    return x + y
+
 
 def crunchNumbers():
-  print("How do you want me to crunch two numbers? ")
-  crunchFunction = input("Type add or something else: ")
+    print("How do you want me to crunch two numbers? ")
+    crunchFunction = input("Type add or something else: ")
 
-  num1 = input('First number: ')
-  num2 = input('Second number: ')
+    num1 = input('First number: ')
+    num2 = input('Second number: ')
 
-  if crunchFunction == "add":
-    answer = add(num1, num2)
-  elif crunchFunction == "subtract":
-    answer = subtract(num1, num2)
-  else:
-    print("That's not a valid crunch method!")
-    return
+    if crunchFunction == "add":
+        answer = add(num1, num2)
+    elif crunchFunction == "subtract":
+        answer = subtract(num1, num2)
+    else:
+        print("That's not a valid crunch method!")
+        return
 
-  print("The answer is", answer)
+    print("The answer is", answer)
+
 
 crunchNumbers()
 

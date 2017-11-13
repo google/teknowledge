@@ -1,5 +1,3 @@
-from IMDBDatabase import IMDBData
-
 # GUIDED PRACTICE
 # Challenge 1.1 - The first step to data analysis is always to understand the
 # database. Just like you can use a for loop to print all the elements in a list,

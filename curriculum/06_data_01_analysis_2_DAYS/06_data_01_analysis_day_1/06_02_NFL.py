@@ -1,5 +1,3 @@
-from NFLDatabase import NFLData
-
 # Challenge 2.0 - If this is a new database or if you have forgotten what it
 # contains, follow the steps in 06_01_IMDB.py to familiarize yourself with the
 # database. This includes printing the names of everything in the database, all
