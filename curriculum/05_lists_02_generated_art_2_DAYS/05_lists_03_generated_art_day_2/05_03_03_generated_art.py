@@ -1,5 +1,5 @@
-from tkinter import *
 from random import randint
+from tkinter import *
 
 # add any shapes here that you wish to be part of the drawing from the start
 drawList = []
@@ -7,57 +7,63 @@ drawList = []
 canvasWidth = 200
 canvasHeight = 200
 
+
 def makeIterativeArt():
-  while (True):
-    print('What would you like to add to the drawing?')
-    print('(examples: "red rectangle", "blue oval")')
-    print('type "ready" when you are ready to view your creation.')
+    while (True):
+        print('What would you like to add to the drawing?')
+        print('(examples: "red rectangle", "blue oval")')
+        print('type "ready" when you are ready to view your creation.')
 
-    drawCommand = input("> ")
-    if (drawCommand == "ready"):
-      break
+        drawCommand = input("> ")
+        if (drawCommand == "ready"):
+            break
 
-    processDrawCommand(drawCommand)
+        processDrawCommand(drawCommand)
 
-  print("Click the python application icon if you don't see the drawing!")
-  runDrawing()
+    print("Click the python application icon if you don't see the drawing!")
+    runDrawing()
+
 
 def processDrawCommand(drawCommand):
-  # the .split() function turns a string of words (with spaces in between)
-  # into a list of words of separate elements.
-  # example: "fee fi fo fum".split() becomes ["fee", "fi", "fo", "fum"]
-  drawCommandList = drawCommand.split()
-  (color, shape) = (drawCommandList[0], drawCommandList[1])
-  drawList.append((color, shape))
+    # the .split() function turns a string of words (with spaces in between)
+    # into a list of words of separate elements.
+    # example: "fee fi fo fum".split() becomes ["fee", "fi", "fo", "fum"]
+    drawCommandList = drawCommand.split()
+    (color, shape) = (drawCommandList[0], drawCommandList[1])
+    drawList.append((color, shape))
+
 
 def draw(canvas, cw, ch):
-  for drawCommand in drawList:
-    if len(drawCommand) == 6:
-      (x0, y0, x1, y1, color, shape) = drawCommand
-    else:
-      (color, shape) = drawCommand
-      (x0, y0, x1, y1) = getRandomSquareCoordinates(canvasWidth, canvasHeight)
-    if shape == "rectangle":
-      canvas.create_rectangle(x0, y0, x1, y1, fill=color)
-    elif shape == "oval":
-      canvas.create_oval(x0, y0, x1, y1, fill=color)
-    else:
-      print("Couldn't draw:", drawCommand)
+    for drawCommand in drawList:
+        if len(drawCommand) == 6:
+            (x0, y0, x1, y1, color, shape) = drawCommand
+        else:
+            (color, shape) = drawCommand
+            (x0, y0, x1, y1) = getRandomSquareCoordinates(canvasWidth, canvasHeight)
+        if shape == "rectangle":
+            canvas.create_rectangle(x0, y0, x1, y1, fill=color)
+        elif shape == "oval":
+            canvas.create_oval(x0, y0, x1, y1, fill=color)
+        else:
+            print("Couldn't draw:", drawCommand)
+
 
 def getRandomSquareCoordinates(cw, ch):
-  squareWidth = 10
-  x0 = randint(0, cw-squareWidth)
-  y0 = randint(0, ch-squareWidth)
-  x1 = x0 + squareWidth
-  y1 = y0 + squareWidth
-  return (x0, y0, x1, y1)
+    squareWidth = 10
+    x0 = randint(0, cw - squareWidth)
+    y0 = randint(0, ch - squareWidth)
+    x1 = x0 + squareWidth
+    y1 = y0 + squareWidth
+    return (x0, y0, x1, y1)
+
 
 def runDrawing(width=canvasWidth, height=canvasHeight):
-  root = Tk()
-  canvas = Canvas(root, width=width, height=height, highlightthickness=0)
-  canvas.pack()
-  draw(canvas, width, height)
-  root.mainloop()
+    root = Tk()
+    canvas = Canvas(root, width=width, height=height, highlightthickness=0)
+    canvas.pack()
+    draw(canvas, width, height)
+    root.mainloop()
+
 
 makeIterativeArt()
 

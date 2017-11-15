@@ -1,4 +1,3 @@
-
 input("Press enter to play a game.")
 
 print("In this game, I will ask you a tough question.")
@@ -10,11 +9,10 @@ print("Type your answer then press enter.")
 yourAnswer = input("> ")
 realAnswer = "42"
 
-
 if (yourAnswer == realAnswer):
-  print("Right! :-)")
+    print("Right! :-)")
 else:
-  print("Wrong, you lose.")
+    print("Wrong, you lose.")
 
 
 # Challenge 2.1 - Play the game - what is wrong?
@@ -31,19 +29,19 @@ else:
 
 
 
-#input("Press enter to play a game.")
+# input("Press enter to play a game.")
 
-#print("In this game, I will ask you a tough question.")
-#input("Press enter to accept the challenge.")
+# print("In this game, I will ask you a tough question.")
+# input("Press enter to accept the challenge.")
 
-#print("What is your favorite color?")
-#favColor = input("> ")
+# print("What is your favorite color?")
+# favColor = input("> ")
 
-#if favColor == 'red':
+# if favColor == 'red':
 #  print("Cool your favorite color is red!")
-#elif favColor != 'blue':
+# elif favColor != 'blue':
 #  print("Your favorite color isn't blue or red, it is " + favColor + ".")
-#else:
+# else:
 #  print("Wow, your favorite color is blue!")
 
 

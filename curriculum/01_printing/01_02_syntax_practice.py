@@ -28,5 +28,3 @@
 # Challenge 2.5 - Write code to ask for your favorite color and 
 #    then print the following message:
 #    "Your favorite color is (inputted color)".
-
-

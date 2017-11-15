@@ -7,7 +7,7 @@ print(question)
 print()
 print("Type your name then press enter.")
 
-name = input("Type Here: ") # Where you type your name
+name = input("Type Here: ")  # Where you type your name
 print(name, type(name))
 print("Hello " + name + "!")
 
@@ -25,4 +25,3 @@ print("Hello " + name + "!")
 #    "Tell me an interesting fact!"
 #    and then when you enter an interesting fact, make it say
 #    "(interesting fact)...that's interesting! Bye (name)!"
-
