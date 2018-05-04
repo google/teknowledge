@@ -58,7 +58,7 @@ Note that this curriculum is incomplete as presented here; the third part of our
 Teknowledge started as a Carnegie Mellon student organization in early 2016, and has continued through the help of many organizations and people.
 
 ## Curriculum Developers
-Erik Pintar, Chris George, Amal Nanavati, Rudina Morina, Vikram Shanker
+Chris George, Amal Nanavati, Claire Wang, Henry Nelson, Dominic Calkosz, Keerthana Gurushankar, Erik Pintar
 
 ## Special Thanks
 Mark Stehlik, David Kosbie

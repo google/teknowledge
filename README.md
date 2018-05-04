@@ -19,7 +19,7 @@ See each folder's individual README file for more details.
 Teknowledge started as a Carnegie Mellon student organization in early 2016, and has continued through the help of many organizations and people.
 
 ## Curriculum Developers
-Erik Pintar, Chris George, Amal Nanavati, Rudina Morina, Vikram Shanker
+Erik Pintar, Chris George, Amal Nanavati, Rudina Morina, Vikram Shanker, Claire Wang, Henry Nelson, Dominic Calkosz, Keerthana Gurushankar
 
 ## Special Thanks
 Mark Stehlik, David Kosbie
