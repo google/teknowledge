@@ -7,49 +7,12 @@ Learn more at [teknowledge.xyz](http://teknowledge.xyz).
 
 # Using Teknowledge's Curriculum
 
-This curriculum is meant to be used in sixteen lessons, running 60 minutes long, that each roughly follow this format:
-* (10-15 minutes) a short (!) lecture teaching the syntax and new concepts
-* (rest of time) students work through the coding files in order
-	* encourage them to ask questions of instructors/mentors as they need help (ideally you have small groups of 2-4 students with one mentor each)
-	* encourage them to collaborate together with each other to ask questions and help each other, but also to NEVER mindlessly copy someone else's code that they don't understand (that is where your learning will stop, wastes the time spent on finishing the file, and majorly hurts your future learning and future abilities)
+There are two curriculums in this repository.
 
-# Curriculum Overview: Lesson-by-Lesson
+* curriculum/ - This folder contains our original curriculum as developed and used for our Fall 2017 programs.
+* curriculum_v2/ - This folder contains a revised version of the original curriculum as used for our Spring 2018 programs. Note that this curriculum is incomplete as presented here; the third part of our curriculum used a proprietary python environment for more advanced graphics programming, thus we could not open-source that portion.
 
-**01_printing** (1 lesson)
-* strings
-* print(), input()
-* variables
-
-**02_conditionals** (1 lesson)
-* booleans
-* ==, !=
-* if, elif, else
-
-**03_functions** (2 lessons)
-* functions
-* parameters
-* print vs return
-
-**04_graphics** (2 lessons)
-* drawing with tkinter
-* loops
-	* while loops
-	* for loops
-
-**05_lists** (4 lessons)
-* list basics
-	* indexing
-	* looping over lists
-* tuples (mainly via a list of tuples)
-
-**06_data** (2 lessons)
-* dictionaries
-* basic data analytics over datasets
-
-**07_game** (4 lessons)
-* a basic game framework
-* using a basic data structure (data.___)
-* bringing together many of the concepts learned to make a Circle Clash game!
+See each folder's individual README file for more details.
 
 # Credits
 
